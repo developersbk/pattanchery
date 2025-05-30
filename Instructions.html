@@ -1,443 +1,502 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Pattanchery &mdash; A Village Informative Website</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Community Project by Sudeesh Kannath" />
-<meta name="keywords" content="bustimings, community, village, engineering" />
-<meta name="author" content="sbkannath1996@gmail.com" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	
-<!-- Facebook and Twitter integration -->
-<meta property="og:title" content=""/>
-<meta property="og:image" content=""/>
-<meta property="og:url" content=""/>
-<meta property="og:site_name" content=""/>
-<meta property="og:description" content=""/>
-<meta name="twitter:title" content="" />
-<meta name="twitter:image" content="" />
-<meta name="twitter:url" content="" />
-<meta name="twitter:card" content="" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pattanchery &mdash; A Village Informative Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Community Project by Sudeesh Kannath" />
+  <meta name="keywords" content="bustimings, community, village, engineering" />
+  <meta name="author" content="sbkannath1996@gmail.com" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+  <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="" />
 
-<!-- Animate.css -->
-<link rel="stylesheet" href="css/animate.css">
-<!-- Icomoon Icon Fonts-->
-<link rel="stylesheet" href="css/icomoon.css">
-<!-- Bootstrap  -->
-<link rel="stylesheet" href="css/bootstrap.css">
+  <!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
 
-<!-- Theme style  -->
-<link rel="stylesheet" href="css/style.css">
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<link rel="shortcut icon" href="images/fav-icon.png" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" type="text/css" />
-<link href="css/dataTables.bootstrap.css" rel="stylesheet">
-<link href="css/dataTables.responsive.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="css/icomoon.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
 
-<!-- Modernizr JS -->
-<script src="js/modernizr-2.6.2.min.js"></script>
-<!-- FOR IE9 below -->
-<!--[if lt IE 9]>
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="images/fav-icon.png" />
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet"
+    type="text/css" />
+  <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+  <link href="css/dataTables.responsive.css" rel="stylesheet">
+
+  <!-- Modernizr JS -->
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
 </head>
-<body>
-<div class="fh5co-loader"></div>
-<div id="page">
-  <nav class="fh5co-nav" role="navigation">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-2">
-          <div id="fh5co-logo"><a href="index.html">KSB</a></div>
-        </div>
-        <div class="col-xs-10 text-right menu-1">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="has-dropdown"> <a>Transport</a>
-              <ul class="dropdown">
-                <li><a href="bustimings.html">Bus Timings</a></li>
-                <li><a href="autorickshaw.html">Rickshaw Hire</a></li>
-                <li><a href="privatehire.html">Private Hire</a></li>
-                <li><a href="outstations.html">OutStations</a></li>
-              </ul>
-            </li>
-            <li class="has-dropdown"> <a>Contact</a>
-              <ul class="dropdown">
-                <li><a href="emergency.html">Emergency</a></li>
-                <li><a href="persons.html">Persons</a></li>
-              </ul>
-            </li>
-            <li class="has-dropdown active"> <a>Information</a>
-              <ul class="dropdown">
-                <li><a href="shops.html">Shops</a></li>
-                <li><a href="documents.html">Documents</a></li>
-                <li><a href="maps.html">Maps</a></li>
-                <li><a href="instructions.html">Instructions</a></li>
-                <li><a href="posters.html">Posters</a></li>
-              </ul>
-            </li>
-            <li class="has-dropdown"> <a>About Us</a>
-              <ul class="dropdown">
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="madeby.html">Made By</a></li>
-              </ul>
-            </li>
-            <li><a href="techtok.html">TechTok Services</a></li>
-            <!--						<li class="btn-cta"><a href="#"><span>Login</span></a></li>-->
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.jpg);">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
-          <div class="display-t">
-            <div class="display-tc animate-box" data-animate-effect="fadeIn">
-              <h1>INSTRUCTIONS</h1>
-              <h2>Guidance for Digital Process and Commercial Things to do</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div id="fh5co-services">
-    <div class="container visible-lg visible-md">
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-eye"></i> </span>
-          <div class="desc">
-            <h3>Electricity Bill Online Payment</h3>
-            <p>Go to this website : <a href="https://wss.kseb.in">https://wss.kseb.in</a> and You can either keep registered or you can pay using quick payment. <a href="https://play.google.com/store/apps/details?id=com.mobile.kseb&hl=en_IN">Android App Link</a>.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-command"></i> </span>
-          <div class="desc">
-            <h3>Aadhar Details Update Online</h3>
-            <p>Update Aadhar Details online for free of cost using this website :&nbsp;<a href="https://uidai.gov.in/my-aadhaar/avail-aadhaar-services.html">https://uidai.gov.in</a>. Name, Address, DoB, Gender, Mobile &amp; Email can be updated online.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-power"></i> </span>
-          <div class="desc">
-            <h3>Passport Application</h3>
-            <p>Use this website : <a href="https://portal2.passportindia.gov.in">https://portal2.passportindia.gov.in</a> to Apply Passport online. Upload Relevant documents and Verification schedulings.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-brush"></i> </span>
-          <div class="desc">
-            <h3>Digilocker</h3>
-            <p>E-sign your Govt approved documents and Use it for displaying to Officials at emergency times : <a href="https://digilocker.gov.in/">https://digilocker.gov.in/</a> (License, Aadhar Card, etc) - <a href="https://play.google.com/store/apps/details?id=com.digilocker.android">Android App Link</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-align-bottom"></i> </span>
-          <div class="desc">
-            <h3>Travel Ticket Bookings</h3>
-            <p>Use this link : <a href="https://www.irctc.co.in/nget/train-search">https://www.irctc.co.in/</a> to Book Train and Travel tickets using Online Payment Methods. (Government Approved Website)</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-aircraft"></i> </span>
-          <div class="desc">
-            <h3>e-District (Akshaya Centre)</h3>
-            <p>Use this website : <a href="https://edistrict.kerala.gov.in/services.html">https://edistrict.kerala.gov.in</a> for Forms Download for every digital service available. Official Website portal.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-share-alternitive"></i> </span>
-          <div class="desc">
-            <h3>Online Shopping</h3>
-            <p>Websites for Online shopping : <a href="https://www.amazon.in/">Amazon</a>, <a href="https://www.flipkart.com/">Flipkart</a>, <a href="https://www.ebay.com/">E-Bay</a>, <a href="https://paytm.com/">PayTM</a>. Get your things delivered at your doorstep.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-tablet"></i> </span>
-          <div class="desc">
-            <h3>Find Vehicle Owner Details</h3>
-            <p>Use this website : <a href="https://parivahan.gov.in/rcdlstatus/?pur_cd=102">https://parivahan.gov.in</a> to Find Owner Name, RC and DL details using Vehicle Registration Number.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-add-to-list"></i> </span>
-          <div class="desc">
-            <h3>Kerala e-Services</h3>
-            <p>Offical Web Portal of Kerala Government : <a href="https://www.kerala.gov.in/service">https://www.kerala.gov.in/</a>. Contains Certificates, Utility Payments, Information about Kerala services.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-air"></i> </span>
-          <div class="desc">
-            <h3>Apply License Online</h3>
-            <p>Apply Learners License online, Renewal, Duplicate License, Registration and many more are dealt in this website : <a href="https://mvd.kerala.gov.in/">https://mvd.kerala.gov.in/</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-help"></i> </span>
-          <div class="desc">
-            <h3>BHIM UPI Transfers</h3>
-            <p>Use Seamless transactions using Mobile number linked with your bank account.(Google Pay, PhonePe) <a href="https://play.google.com/store/apps/details?id=in.org.npci.upiapp&hl=en_IN">BHIM App Link</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-command"></i> </span>
-          <div class="desc">
-            <h3>PAN Card Online</h3>
-            <p>Update your PAN Card details or Take printout of your digital PAN Card online using this link : <a href="https://www.onlineservices.nsdl.com/paam/MPanLogin.html">https://www.onlineservices.nsdl.com</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-video2"></i> </span>
-          <div class="desc">
-            <h3>Money Transfer Online</h3>
-            <p>Use online bank websites for money transfer. Commision tax is applied but reduces the efforts of standing in queue and Paperfree. (SBI, SIB and many more..)</p>
-            <p>&nbsp;</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-help2"></i> </span>
-          <div class="desc">
-            <h3>Online Mobile Recharge</h3>
-            <p>Search for Online Subscriber websites like <a href="https://www.jio.com/">Jio</a>, <a href="https://www.airtel.in/">Airtel</a>, <a href="https://portal.bsnl.in/myportal/quickrecharge.do">BSNL</a>, <a href="https://www.vodafone.in/">Vodafone</a> and Recharge online using different payment methods.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-	  
-	  <!-- Bootstrap Start-->
-	  <div class="container visible-xs visible-sm">
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class=""> 
-          <div class="desc">
-            <h3>Electricity Bill Online Payment</h3>
-            <p>Go to this website : <a href="https://wss.kseb.in">https://wss.kseb.in</a> and You can either keep registered or you can pay using quick payment. <a href="https://play.google.com/store/apps/details?id=com.mobile.kseb&hl=en_IN">Android App Link</a>.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Aadhar Details Update Online</h3>
-            <p>Update Aadhar Details online for free of cost using this website :&nbsp;<a href="https://uidai.gov.in/my-aadhaar/avail-aadhaar-services.html">https://uidai.gov.in</a>. Name, Address, DoB, Gender, Mobile &amp; Email can be updated online.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Passport Application</h3>
-            <p>Use this website : <a href="https://portal2.passportindia.gov.in">https://portal2.passportindia.gov.in</a> to Apply Passport online. Upload Relevant documents and Verification schedulings.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Digilocker</h3>
-            <p>E-sign your Govt approved documents and Use it for displaying to Officials at emergency times : <a href="https://digilocker.gov.in/">https://digilocker.gov.in/</a> (License, Aadhar Card, etc) - <a href="https://play.google.com/store/apps/details?id=com.digilocker.android">Android App Link</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Travel Ticket Bookings</h3>
-            <p>Use this link : <a href="https://www.irctc.co.in/nget/train-search">https://www.irctc.co.in/</a> to Book Train and Travel tickets using Online Payment Methods. (Government Approved Website)</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>e-District (Akshaya Centre)</h3>
-            <p>Use this website : <a href="https://edistrict.kerala.gov.in/services.html">https://edistrict.kerala.gov.in</a> for Forms Download for every digital service available. Official Website portal.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Online Shopping</h3>
-            <p>Websites for Online shopping : <a href="https://www.amazon.in/">Amazon</a>, <a href="https://www.flipkart.com/">Flipkart</a>, <a href="https://www.ebay.com/">E-Bay</a>, <a href="https://paytm.com/">PayTM</a>. Get your things delivered at your doorstep.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Find Vehicle Owner Details</h3>
-            <p>Use this website : <a href="https://parivahan.gov.in/rcdlstatus/?pur_cd=102">https://parivahan.gov.in</a> to Find Owner Name, RC and DL details using Vehicle Registration Number.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Kerala e-Services</h3>
-            <p>Offical Web Portal of Kerala Government : <a href="https://www.kerala.gov.in/service">https://www.kerala.gov.in/</a>. Contains Certificates, Utility Payments, Information about Kerala services.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Apply License Online</h3>
-            <p>Apply Learners License online, Renewal, Duplicate License, Registration and many more are dealt in this website : <a href="https://mvd.kerala.gov.in/">https://mvd.kerala.gov.in/</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>BHIM UPI Transfers</h3>
-            <p>Use Seamless transactions using Mobile number linked with your bank account.(Google Pay, PhonePe) <a href="https://play.google.com/store/apps/details?id=in.org.npci.upiapp&hl=en_IN">BHIM App Link</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>PAN Card Online</h3>
-            <p>Update your PAN Card details or Take printout of your digital PAN Card online using this link : <a href="https://www.onlineservices.nsdl.com/paam/MPanLogin.html">https://www.onlineservices.nsdl.com</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Money Transfer Online</h3>
-            <p>Use online bank websites for money transfer. Commision tax is applied but reduces the efforts of standing in queue and Paperfree. (SBI, SIB and many more..)</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Online Mobile Recharge</h3>
-            <p>Search for Online Subscriber websites like <a href="https://www.jio.com/">Jio</a>, <a href="https://www.airtel.in/">Airtel</a>, <a href="https://portal.bsnl.in/myportal/quickrecharge.do">BSNL</a>, <a href="https://www.vodafone.in/">Vodafone</a> and Recharge online using different payment methods.</p>
-          </div>
-        </div>
-      </div>
-	  </div>
-	  <!-- Bootstrap Ende -->
-	  
-  </div>
-  <div id="fh5co-started">
-    <div class="container">
-      <div class="row animate-box">
-        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-          <h2>Lets Get Started</h2>
-          <p>We are happy to hear your suggestions for the good.</p>
-        </div>
-      </div>
-      <div class="row animate-box">
-        <div class="col-md-8 col-md-offset-2">
-          <form action="madeby.html" class="form-inline">
-            <div class="col-md-6 col-md-offset-3 col-sm-6">
-              <button type="submit" class="btn btn-default btn-block">Get In Touch</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer id="fh5co-footer" role="contentinfo">
-    <div class="container">
-      <div class="row row-pb-md">
-        <div class="col-md-4 fh5co-widget">
-          <h3>Main Bus Stands</h3>
-          <p>There are 4 main bus stands in Palakkad. Most of the buses go to Stadium stand from Pattanchery by several routes. The below link gives access to Locations of bus stands and distance from Pattanchery.</p>
-          <p><a href="busstandlocations.html">Bus Stand Locations</a></p>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-          <ul class="fh5co-footer-links">
-            <li><a href="bustimings.html">Bus Timings</a></li>
-            <li><a href="autorickshaw.html">Auto Hire</a></li>
-            <li><a href="outstations.html">OutStations</a></li>
-            <li><a href="emergency.html">Emergency</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-          <ul class="fh5co-footer-links">
-            <li><a href="persons.html">Persons</a></li>
-            <li><a href="shops.html">Shops</a></li>
-            <li><a href="posters.html">Posters</a></li>
-            <li><a href="maps.html">Map</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-          <ul class="fh5co-footer-links">
-            <li><a href="instructions.html">Instructions</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="madeby.html">MadeBy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row copyright">
-        <div class="col-md-12 text-center">
-          <p> <small class="block">&copy; 2019 All Rights Reserved.</small> <small class="block">Designed by Sudeesh Kannath.</small> </p>
-          <p>
-          <ul class="fh5co-social-icons">
-            <!-- <li><a href="https://twitter.com/CandySkulzZ"><em class="icon-twitter"></em></a></li>
-            <li><a href="https://www.facebook.com/CandySkulzZ"><i class="icon-facebook"></i></a></li> -->
-            <li><a href="https://www.linkedin.com/in/kannathb/"><i class="icon-linkedin"></i></a></li>
-            <!--							<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
-          </ul>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
-<div class="gototop js-top"> <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a> </div>
 
-<!-- jQuery --> 
-<script src="js/jquery.min.js"></script> 
-<!-- jQuery Easing --> 
-<script src="js/jquery.easing.1.3.js"></script> 
-<!-- Bootstrap --> 
-<script src="js/bootstrap.min.js"></script> 
-<!-- Waypoints --> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<!-- Main --> 
-<script src="js/main.js"></script> 
-<script src="js/jquery.dataTables.min.js"></script> 
-<script src="js/dataTables.bootstrap.min.js"></script> 
-<script src="js/dataTables.responsive.js"></script> 
-<script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-            responsive: true
-        });
+<body>
+  <div class="fh5co-loader"></div>
+  <div id="page">
+    <nav class="fh5co-nav" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-2">
+            <div id="fh5co-logo"><a href="index.html">PATTANCHERY</a></div>
+          </div>
+          <div class="col-xs-10 text-right menu-1">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="has-dropdown"> <a>Transport</a>
+                <ul class="dropdown">
+                  <li><a href="bustimings.html">Bus Timings</a></li>
+                  <li><a href="autorickshaw.html">Rickshaw Hire</a></li>
+                  <li><a href="privatehire.html">Private Hire</a></li>
+                  <li><a href="outstations.html">OutStations</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown"> <a>Contact</a>
+                <ul class="dropdown">
+                  <li><a href="emergency.html">Emergency</a></li>
+                  <li><a href="persons.html">Persons</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown active"> <a>Information</a>
+                <ul class="dropdown">
+                  <li><a href="shops.html">Shops</a></li>
+                  <li><a href="documents.html">Documents</a></li>
+                  <li><a href="maps.html">Maps</a></li>
+                  <li><a href="instructions.html">Instructions</a></li>
+                  <li><a href="posters.html">Posters</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown"> <a>About Us</a>
+                <ul class="dropdown">
+                  <li><a href="feedback.html">Feedback</a></li>
+                  <li><a href="madeby.html">Made By</a></li>
+                </ul>
+              </li>
+              <li><a href="techtok.html">TechTok Services</a></li>
+              <!--						<li class="btn-cta"><a href="#"><span>Login</span></a></li>-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner"
+      style="background-image:url(images/img_bg_2.jpg);">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="display-t">
+              <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                <h1>INSTRUCTIONS</h1>
+                <h2>Guidance for Digital Process and Commercial Things to do</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="fh5co-services">
+      <div class="container visible-lg visible-md">
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-eye"></i> </span>
+            <div class="desc">
+              <h3>Electricity Bill Online Payment</h3>
+              <p>Go to this website : <a href="https://wss.kseb.in">https://wss.kseb.in</a> and You can either keep
+                registered or you can pay using quick payment. <a
+                  href="https://play.google.com/store/apps/details?id=com.mobile.kseb&hl=en_IN">Android App Link</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-command"></i> </span>
+            <div class="desc">
+              <h3>Aadhar Details Update Online</h3>
+              <p>Update Aadhar Details online for free of cost using this website :&nbsp;<a
+                  href="https://uidai.gov.in/my-aadhaar/avail-aadhaar-services.html">https://uidai.gov.in</a>. Name,
+                Address, DoB, Gender, Mobile &amp; Email can be updated online.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-power"></i> </span>
+            <div class="desc">
+              <h3>Passport Application</h3>
+              <p>Use this website : <a
+                  href="https://portal2.passportindia.gov.in">https://portal2.passportindia.gov.in</a> to Apply Passport
+                online. Upload Relevant documents and Verification schedulings.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-brush"></i> </span>
+            <div class="desc">
+              <h3>Digilocker</h3>
+              <p>E-sign your Govt approved documents and Use it for displaying to Officials at emergency times : <a
+                  href="https://digilocker.gov.in/">https://digilocker.gov.in/</a> (License, Aadhar Card, etc) - <a
+                  href="https://play.google.com/store/apps/details?id=com.digilocker.android">Android App Link</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-align-bottom"></i> </span>
+            <div class="desc">
+              <h3>Travel Ticket Bookings</h3>
+              <p>Use this link : <a href="https://www.irctc.co.in/nget/train-search">https://www.irctc.co.in/</a> to
+                Book Train and Travel tickets using Online Payment Methods. (Government Approved Website)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-aircraft"></i> </span>
+            <div class="desc">
+              <h3>e-District (Akshaya Centre)</h3>
+              <p>Use this website : <a
+                  href="https://edistrict.kerala.gov.in/services.html">https://edistrict.kerala.gov.in</a> for Forms
+                Download for every digital service available. Official Website portal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-share-alternitive"></i> </span>
+            <div class="desc">
+              <h3>Online Shopping</h3>
+              <p>Websites for Online shopping : <a href="https://www.amazon.in/">Amazon</a>, <a
+                  href="https://www.flipkart.com/">Flipkart</a>, <a href="https://www.ebay.com/">E-Bay</a>, <a
+                  href="https://paytm.com/">PayTM</a>. Get your things delivered at your doorstep.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-tablet"></i> </span>
+            <div class="desc">
+              <h3>Find Vehicle Owner Details</h3>
+              <p>Use this website : <a
+                  href="https://parivahan.gov.in/rcdlstatus/?pur_cd=102">https://parivahan.gov.in</a> to Find Owner
+                Name, RC and DL details using Vehicle Registration Number.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-add-to-list"></i> </span>
+            <div class="desc">
+              <h3>Kerala e-Services</h3>
+              <p>Offical Web Portal of Kerala Government : <a
+                  href="https://www.kerala.gov.in/service">https://www.kerala.gov.in/</a>. Contains Certificates,
+                Utility Payments, Information about Kerala services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-air"></i> </span>
+            <div class="desc">
+              <h3>Apply License Online</h3>
+              <p>Apply Learners License online, Renewal, Duplicate License, Registration and many more are dealt in this
+                website : <a href="https://mvd.kerala.gov.in/">https://mvd.kerala.gov.in/</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-help"></i> </span>
+            <div class="desc">
+              <h3>BHIM UPI Transfers</h3>
+              <p>Use Seamless transactions using Mobile number linked with your bank account.(Google Pay, PhonePe) <a
+                  href="https://play.google.com/store/apps/details?id=in.org.npci.upiapp&hl=en_IN">BHIM App Link</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-command"></i> </span>
+            <div class="desc">
+              <h3>PAN Card Online</h3>
+              <p>Update your PAN Card details or Take printout of your digital PAN Card online using this link : <a
+                  href="https://www.onlineservices.nsdl.com/paam/MPanLogin.html">https://www.onlineservices.nsdl.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-video2"></i> </span>
+            <div class="desc">
+              <h3>Money Transfer Online</h3>
+              <p>Use online bank websites for money transfer. Commision tax is applied but reduces the efforts of
+                standing in queue and Paperfree. (SBI, SIB and many more..)</p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-help2"></i> </span>
+            <div class="desc">
+              <h3>Online Mobile Recharge</h3>
+              <p>Search for Online Subscriber websites like <a href="https://www.jio.com/">Jio</a>, <a
+                  href="https://www.airtel.in/">Airtel</a>, <a
+                  href="https://portal.bsnl.in/myportal/quickrecharge.do">BSNL</a>, <a
+                  href="https://www.vodafone.in/">Vodafone</a> and Recharge online using different payment methods.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap Start-->
+      <div class="container visible-xs visible-sm">
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Electricity Bill Online Payment</h3>
+              <p>Go to this website : <a href="https://wss.kseb.in">https://wss.kseb.in</a> and You can either keep
+                registered or you can pay using quick payment. <a
+                  href="https://play.google.com/store/apps/details?id=com.mobile.kseb&hl=en_IN">Android App Link</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Aadhar Details Update Online</h3>
+              <p>Update Aadhar Details online for free of cost using this website :&nbsp;<a
+                  href="https://uidai.gov.in/my-aadhaar/avail-aadhaar-services.html">https://uidai.gov.in</a>. Name,
+                Address, DoB, Gender, Mobile &amp; Email can be updated online.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Passport Application</h3>
+              <p>Use this website : <a
+                  href="https://portal2.passportindia.gov.in">https://portal2.passportindia.gov.in</a> to Apply Passport
+                online. Upload Relevant documents and Verification schedulings.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Digilocker</h3>
+              <p>E-sign your Govt approved documents and Use it for displaying to Officials at emergency times : <a
+                  href="https://digilocker.gov.in/">https://digilocker.gov.in/</a> (License, Aadhar Card, etc) - <a
+                  href="https://play.google.com/store/apps/details?id=com.digilocker.android">Android App Link</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Travel Ticket Bookings</h3>
+              <p>Use this link : <a href="https://www.irctc.co.in/nget/train-search">https://www.irctc.co.in/</a> to
+                Book Train and Travel tickets using Online Payment Methods. (Government Approved Website)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>e-District (Akshaya Centre)</h3>
+              <p>Use this website : <a
+                  href="https://edistrict.kerala.gov.in/services.html">https://edistrict.kerala.gov.in</a> for Forms
+                Download for every digital service available. Official Website portal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Online Shopping</h3>
+              <p>Websites for Online shopping : <a href="https://www.amazon.in/">Amazon</a>, <a
+                  href="https://www.flipkart.com/">Flipkart</a>, <a href="https://www.ebay.com/">E-Bay</a>, <a
+                  href="https://paytm.com/">PayTM</a>. Get your things delivered at your doorstep.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Find Vehicle Owner Details</h3>
+              <p>Use this website : <a
+                  href="https://parivahan.gov.in/rcdlstatus/?pur_cd=102">https://parivahan.gov.in</a> to Find Owner
+                Name, RC and DL details using Vehicle Registration Number.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Kerala e-Services</h3>
+              <p>Offical Web Portal of Kerala Government : <a
+                  href="https://www.kerala.gov.in/service">https://www.kerala.gov.in/</a>. Contains Certificates,
+                Utility Payments, Information about Kerala services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Apply License Online</h3>
+              <p>Apply Learners License online, Renewal, Duplicate License, Registration and many more are dealt in this
+                website : <a href="https://mvd.kerala.gov.in/">https://mvd.kerala.gov.in/</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>BHIM UPI Transfers</h3>
+              <p>Use Seamless transactions using Mobile number linked with your bank account.(Google Pay, PhonePe) <a
+                  href="https://play.google.com/store/apps/details?id=in.org.npci.upiapp&hl=en_IN">BHIM App Link</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>PAN Card Online</h3>
+              <p>Update your PAN Card details or Take printout of your digital PAN Card online using this link : <a
+                  href="https://www.onlineservices.nsdl.com/paam/MPanLogin.html">https://www.onlineservices.nsdl.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Money Transfer Online</h3>
+              <p>Use online bank websites for money transfer. Commision tax is applied but reduces the efforts of
+                standing in queue and Paperfree. (SBI, SIB and many more..)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Online Mobile Recharge</h3>
+              <p>Search for Online Subscriber websites like <a href="https://www.jio.com/">Jio</a>, <a
+                  href="https://www.airtel.in/">Airtel</a>, <a
+                  href="https://portal.bsnl.in/myportal/quickrecharge.do">BSNL</a>, <a
+                  href="https://www.vodafone.in/">Vodafone</a> and Recharge online using different payment methods.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bootstrap Ende -->
+
+    </div>
+    <div id="fh5co-started">
+      <div class="container">
+        <div class="row animate-box">
+          <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+            <h2>Lets Get Started</h2>
+            <p>We are happy to hear your suggestions for the good.</p>
+          </div>
+        </div>
+        <div class="row animate-box">
+          <div class="col-md-8 col-md-offset-2">
+            <form action="madeby.html" class="form-inline">
+              <div class="col-md-6 col-md-offset-3 col-sm-6">
+                <button type="submit" class="btn btn-default btn-block">Get In Touch</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="fh5co-footer" role="contentinfo">
+      <div class="container">
+        <div class="row row-pb-md">
+          <div class="col-md-4 fh5co-widget">
+            <h3>Main Bus Stands</h3>
+            <p>There are 4 main bus stands in Palakkad. Most of the buses go to Stadium stand from Pattanchery by
+              several routes. The below link gives access to Locations of bus stands and distance from Pattanchery.</p>
+            <p><a href="busstandlocations.html">Bus Stand Locations</a></p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+            <ul class="fh5co-footer-links">
+              <li><a href="bustimings.html">Bus Timings</a></li>
+              <li><a href="autorickshaw.html">Auto Hire</a></li>
+              <li><a href="outstations.html">OutStations</a></li>
+              <li><a href="emergency.html">Emergency</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+            <ul class="fh5co-footer-links">
+              <li><a href="persons.html">Persons</a></li>
+              <li><a href="shops.html">Shops</a></li>
+              <li><a href="posters.html">Posters</a></li>
+              <li><a href="maps.html">Map</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+            <ul class="fh5co-footer-links">
+              <li><a href="instructions.html">Instructions</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              <li><a href="madeby.html">MadeBy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row copyright">
+          <div class="col-md-12 text-center">
+            <p> <small class="block">&copy; 2019 All Rights Reserved.</small> <small class="block">Designed by Sudeesh
+                Kannath.</small> </p>
+            <p>
+            <ul class="fh5co-social-icons">
+              <!-- <li><a href="https://twitter.com/CandySkulzZ"><em class="icon-twitter"></em></a></li>
+            <li><a href="https://www.facebook.com/CandySkulzZ"><i class="icon-facebook"></i></a></li> -->
+              <li><a href="https://www.linkedin.com/in/kannathb/"><i class="icon-linkedin"></i></a></li>
+              <!--							<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="gototop js-top"> <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a> </div>
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <!-- Main -->
+  <script src="js/main.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/dataTables.bootstrap.min.js"></script>
+  <script src="js/dataTables.responsive.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#dataTables-example').DataTable({
+        responsive: true
+      });
     });
-    </script>
+  </script>
 </body>
+
 </html>
