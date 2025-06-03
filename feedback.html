@@ -40,7 +40,33 @@
   <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("FwfJJ3pApdEOw0DCS"); // Replace with your EmailJS public key
+    })();
+  </script>
+  <style>
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+    .row input {
+      flex: 1;
+    }
+    button {
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
@@ -112,49 +138,16 @@
         <div class="row">
           <div class="col-md-6 animate-box">
             <h3>Get In Touch</h3>
-            <form class="gform pure-form pure-form-stacked" method="POST" data-email="sbkannath1996@gmail.com"
-              action="https://script.google.com/macros/s/AKfycbyTuP6QrJWwfvSBDs6T489VAjv0d0GfeRUBuh8lDjLXrgU7eFk/exec">
-              <div class="row form-group">
-                <div class="col-md-6">
-                  <!-- <label for="fname">First Name</label> -->
-                  <input type="text" name="Name" id="fname" class="form-control" placeholder="Your firstname">
-                </div>
-                <div class="col-md-6">
-                  <!-- <label for="lname">Last Name</label> -->
-                  <input type="text" name="Lastname" id="lname" class="form-control" placeholder="Your lastname">
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <!-- <label for="email">Email</label> -->
-                  <input type="text" name="Mail ID" id="email" class="form-control" placeholder="Your email address">
-                </div>
-              </div>
+            <form id="contactForm">
+    <div class="row">
+      <input type="text" name="firstname" placeholder="Your firstname" required>
+      <input type="text" name="lastname" placeholder="Your lastname" required>
+    </div>
+    <input type="email" name="email" placeholder="Your email address" required>
+    <textarea name="message" placeholder="Say something about us" rows="6" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 
-              <!--
-						<div class="row form-group">
-							<div class="col-md-12">
-								 <label for="subject">Subject</label> 
-								<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-							</div>
-						</div>
--->
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <!-- <label for="message">Message</label> -->
-                  <textarea name="Feedback" id="message" cols="30" rows="10" class="form-control"
-                    placeholder="Say something about us"></textarea>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary">
-              </div>
-              <div style="display:none" class="thankyou_message">
-                <!-- You can customize the thankyou message by editing the code below -->
-                <h2><em>Thanks</em> for the feedback! We will get back to you soon! </h2>
-              </div>
-            </form>
           </div>
         </div>
       </div>
@@ -242,6 +235,25 @@
   <script src="js/main.js"></script>
   <script data-cfasync="false" type="text/javascript" src="Required/form-submission-handler.js"></script>
   <script data-cfasync="false" type="text/javascript" src="Required/google-apps-script.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      emailjs.send("techtok_email", "template_wm7qjid", {
+        firstname: this.firstname.value,
+        lastname: this.lastname.value,
+        email: this.email.value,
+        message: this.message.value
+      })
+      .then(function(response) {
+        alert("Message sent successfully!");
+      }, function(error) {
+        alert("Failed to send message. Error: " + JSON.stringify(error));
+      });
+
+      this.reset();
+    });
+  </script>
 </body>
 
 </html>
