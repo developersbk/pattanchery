@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<!-- PopUp Code Start-->
-<!--
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!-- PopUp Code Start-->
+  <!--
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
 <style type="text/css">
@@ -88,81 +89,85 @@ return false;
 </script>
 
 -->
-<!-- PopUp Code End-->
+  <!-- PopUp Code End-->
 
-<style>
-.clockdate-wrapper {
-	/*    background-color: #1f3a93;*/
-	padding: 25px;
-	max-width: 350px;
-	width: 100%;
-	text-align: center;
-	border-radius: 5px;
-	margin: 0 auto;
-	margin-top: 15%;
-}
-#clock {
-	/*    background-color:#1f3a93;*/
-	font-family: sans-serif;
-	font-size: 60px;
-	text-shadow: 0px 0px 1px #fff;
-	color: #fff;
-}
-#clock span {
-	color: #fff;
-	text-shadow: 0px 0px 1px #1f3a93;
-	font-size: 30px;
-	position: relative;
-	top: -27px;
-	left: -10px;
-}
-#date {
-	letter-spacing: 10px;
-	font-size: 14px;
-	font-family: arial, sans-serif;
-	color: #fff;
-}
-</style>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>TechTok &mdash; Internet Services</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Community Project by Sudeesh Kannath" />
-<meta name="keywords" content="bustimings, community, village, engineering" />
-<meta name="author" content="sbkannath1996@gmail.com" />
+  <style>
+    .clockdate-wrapper {
+      /*    background-color: #1f3a93;*/
+      padding: 25px;
+      max-width: 350px;
+      width: 100%;
+      text-align: center;
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 15%;
+    }
 
-<!-- Facebook and Twitter integration -->
-<meta property="og:title" content=""/>
-<meta property="og:image" content=""/>
-<meta property="og:url" content=""/>
-<meta property="og:site_name" content=""/>
-<meta property="og:description" content=""/>
-<meta name="twitter:title" content="" />
-<meta name="twitter:image" content="" />
-<meta name="twitter:url" content="" />
-<meta name="twitter:card" content="" />
+    #clock {
+      /*    background-color:#1f3a93;*/
+      font-family: sans-serif;
+      font-size: 60px;
+      text-shadow: 0px 0px 1px #fff;
+      color: #fff;
+    }
 
-<!-- Animate.css -->
-<link rel="stylesheet" href="css/animate.css">
-<!-- Icomoon Icon Fonts-->
-<link rel="stylesheet" href="css/icomoon.css">
-<!-- Bootstrap  -->
-<link rel="stylesheet" href="css/bootstrap.css">
-<!-- Theme style  -->
-<link rel="stylesheet" href="css/style.css">
+    #clock span {
+      color: #fff;
+      text-shadow: 0px 0px 1px #1f3a93;
+      font-size: 30px;
+      position: relative;
+      top: -27px;
+      left: -10px;
+    }
 
-<!-- Modernizr JS -->
-<script src="js/modernizr-2.6.2.min.js"></script>
-<!-- FOR IE9 below -->
-<!--[if lt IE 9]>
+    #date {
+      letter-spacing: 10px;
+      font-size: 14px;
+      font-family: arial, sans-serif;
+      color: #fff;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TechTok &mdash; Internet Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Community Project by Sudeesh Kannath" />
+  <meta name="keywords" content="bustimings, community, village, engineering" />
+  <meta name="author" content="sbkannath1996@gmail.com" />
+
+  <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="css/icomoon.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Modernizr JS -->
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
 </head>
+
 <body onload="startTime()">
 
-<!-- Popup Code Start -->
-<!--
+  <!-- Popup Code Start -->
+  <!--
 	
 <div class="popup">
   <div class="cnt223">
@@ -174,407 +179,472 @@ return false;
 </div>
 
 -->
-<!-- Popup Code End --> 
+  <!-- Popup Code End -->
 
-<script>
-function startTime() {
-    var today = new Date();
-    var hr = today.getHours();
-    var min = today.getMinutes();
-    var sec = today.getSeconds();
-    ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
-    hr = (hr == 0) ? 12 : hr;
-    hr = (hr > 12) ? hr - 12 : hr;
-    //Add a zero in front of numbers<10
-    hr = checkTime(hr);
-    min = checkTime(min);
-    sec = checkTime(sec);
-    document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
-    
-    var months = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SPETEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
-    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var curWeekDay = days[today.getDay()];
-    var curDay = today.getDate();
-    var curMonth = months[today.getMonth()];
-    var curYear = today.getFullYear();
-    var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
-    document.getElementById("date").innerHTML = date;
-    
-    var time = setTimeout(function(){ startTime() }, 500);
-}
-function checkTime(i) {
-    if (i < 10) {
-        i = "0" + i;
+  <script>
+    function startTime() {
+      var today = new Date();
+      var hr = today.getHours();
+      var min = today.getMinutes();
+      var sec = today.getSeconds();
+      ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+      hr = (hr == 0) ? 12 : hr;
+      hr = (hr > 12) ? hr - 12 : hr;
+      //Add a zero in front of numbers<10
+      hr = checkTime(hr);
+      min = checkTime(min);
+      sec = checkTime(sec);
+      document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
+
+      var months = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SPETEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
+      var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      var curWeekDay = days[today.getDay()];
+      var curDay = today.getDate();
+      var curMonth = months[today.getMonth()];
+      var curYear = today.getFullYear();
+      var date = curWeekDay + ", " + curDay + " " + curMonth + " " + curYear;
+      document.getElementById("date").innerHTML = date;
+
+      var time = setTimeout(function () { startTime() }, 500);
     }
-    return i;
-}
-</script>
-<div class="fh5co-loader"></div>
-<div id="page">
-  <nav class="fh5co-nav" role="navigation">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-2">
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    }
+  </script>
+  <div class="fh5co-loader"></div>
+  <div id="page">
+    <nav class="fh5co-nav" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-2">
             <div id="fh5co-logo"><a href="techtok.html">TECHTOK</a></div>
-        </div>
-        <div class="col-xs-10 text-right menu-1">
-          <ul>
-            <li><a href="techtok.html">Home</a></li>
-            <li class="active"><a href="techtokservices.html">Services</a></li>
-            <li><a href="techtokaboutus.html">About Us</a></li>
-            <li><a href="techtokcontactus.html">Contact Us</a></li>
-            <li><a href="techtokgallery.html">Gallery</a></li>
-            <li><a href="index.html">Pattanchery</a></li>
-          </ul>
+          </div>
+          <div class="col-xs-10 text-right menu-1">
+            <ul>
+              <li><a href="techtok.html">Home</a></li>
+              <li class="active"><a href="techtokservices.html">Services</a></li>
+              <li><a href="techtokaboutus.html">About Us</a></li>
+              <li><a href="techtokcontactus.html">Contact Us</a></li>
+              <li><a href="techtokgallery.html">Gallery</a></li>
+              <li><a href="index.html">Pattanchery</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
-          <div class="display-t">
-            <div onClick="myFunctionsbk()" class="display-tc animate-box" data-animate-effect="fadeIn">
-              <h1>SERVICES</h1>
-              <h2>List of all services we provide..</h2>
-              <div class="row">
-                <form class="form-inline" id="fh5co-header-subscribe">
-                  <div class="col-md-8 col-md-offset-2">
-                    <div class="form-group"> </div>
-                  </div>
-                </form>
+    </nav>
+    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="display-t">
+              <div onClick="myFunctionsbk()" class="display-tc animate-box" data-animate-effect="fadeIn">
+                <h1>SERVICES</h1>
+                <h2>List of all services we provide..</h2>
+                <div class="row">
+                  <form class="form-inline" id="fh5co-header-subscribe">
+                    <div class="col-md-8 col-md-offset-2">
+                      <div class="form-group"> </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <div id="fh5co-services">
-    <div class="container visible-lg visible-md">
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-eye"></i> </span>
-          <div class="desc">
-            <h3>Electricity Bill Online Payment</h3>
-            <p>Go to this website : <a href="https://wss.kseb.in">https://wss.kseb.in</a> and You can either keep registered or you can pay using quick payment. <a href="https://play.google.com/store/apps/details?id=com.mobile.kseb&hl=en_IN">Android App Link</a>.</p>
+    </header>
+    <div id="fh5co-services">
+      <div class="container visible-lg visible-md">
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-phone"></i> </span>
+            <div class="desc">
+              <h3>Mobile DTH & Fastag Recharges</h3>
+              <p>We provide mobile & Fastag top ups and monthly plans for DTH services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box"> <!-- icon-command icon-power-->
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-briefcase"></i> </span>
+            <div class="desc">
+              <h3>Professional Courier - Domestic, International & Cargo</h3>
+              <p>We provide professional courier services for Domestic, International & Cargo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-add-to-list"></i> </span>
+            <div class="desc">
+              <h3>Printouts, Photocopy(Color & B&W) and Lamination</h3>
+              <p>We provide printouts and photocopy in color and B&W including lamination services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-aircraft"></i> </span>
+            <div class="desc">
+              <h3>Travel Ticket Bookings</h3>
+              <p>We provide travel ticket bookings for Buses, Trains and Flights.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-brush"></i> </span>
+            <div class="desc">
+              <h3>Utility Bill Payments</h3>
+              <p>We provide Electricity, Water, Fibernet, Loan and all other digital payments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-download"></i> </span>
+            <div class="desc">
+              <h3>Rental Agreement & DTP (English, Malayalam & Hindi)</h3>
+              <p>Services for writing rental agreements and creating newsletters, brochures, and other printed
+                materials.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-share-alternitive"></i> </span>
+            <div class="desc">
+              <h3>Advertising</h3>
+              <p>We provide advertising services News Paper Advertising On All Leading News Paper In Kerala - Malayala
+                Manorama, Mathrubhumi, Desabhimani, Janmabhumi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-tablet"></i> </span>
+            <div class="desc">
+              <h3>Passport Application</h3>
+              <p>We provide passport application services and arrange appointments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-add-to-list"></i> </span>
+            <div class="desc">
+              <h3>LIC, Rent, University & Penalty Payments</h3>
+              <p>We provide LIC, Rent, University, penalty and all online payments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-box"></i> </span>
+            <div class="desc">
+              <h3>PSC Registration</h3>
+              <p>We provide services to register PSC application and updates.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-air"></i> </span>
+            <div class="desc">
+              <h3>RTO - Vehicle Tax, Insurance, Penalty</h3>
+              <p>We provide payments of vehicle tax, penalty and insurance services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-help"></i> </span>
+            <div class="desc">
+              <h3>Money Transfers & UPI Payments</h3>
+              <p>We provide transactions using bank transfers and BHIM UPI payments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-command"></i> </span>
+            <div class="desc">
+              <h3>PAN Card</h3>
+              <p>We provide service to update your PAN Card details or Take printout of your digital PAN Card</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-air"></i> </span>
+            <div class="desc">
+              <h3>Farmers Facility</h3>
+              <p>We provide services for Land Lease agreement, Pm-Kissan, Pm-Fby, Supplyco Registration, Padassekharam
+                Insurance, Kissan Insurance and Royalty.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-brush"></i> </span>
+            <div class="desc">
+              <h3>Books of Account Writing & Labour India</h3>
+              <p>We provide services for Account books writing, Preparation of financial statments, Labour India books
+                and all your online publications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-globe"></i> </span>
+            <div class="desc">
+              <h3>Stationary</h3>
+              <p>We sell Udayabharatham calendar, school and all other stationery items.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="feature-center"> <span class="icon icon2"> <i class="icon-command"></i> </span>
+            <div class="desc">
+              <h3>Insurance</h3>
+              <p>We provide services for Insurance Card Of Rs. 5 Lakhs for citizens above 70 years old.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-command"></i> </span>
-          <div class="desc">
-            <h3>Aadhar Details Update Online</h3>
-            <p>Update Aadhar Details online for free of cost using this website :&nbsp;<a href="https://uidai.gov.in/my-aadhaar/avail-aadhaar-services.html">https://uidai.gov.in</a>. Name, Address, DoB, Gender, Mobile &amp; Email can be updated online.</p>
+
+      <!-- Bootstrap Start-->
+      <div class="container visible-xs visible-sm">
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Mobile DTH & Fastag Recharges</h3>
+              <p>We provide mobile & Fastag top ups and monthly plans for DTH services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Professional Courier - Domestic, International & Cargo</h3>
+              <p>We provide professional courier services for Domestic, International & Cargo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Printouts, Photocopy(Color & B&W) and Lamination</h3>
+              <p>We provide printouts and photocopy in color and B&W including lamination services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Travel Ticket Bookings</h3>
+              <p>We provide travel ticket bookings for Buses, Trains and Flights.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Utility Bill Payments</h3>
+              <p>We provide Electricity, Water, Fibernet, Loan and all other digital payments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Rental Agreement & DTP (English, Malayalam & Hindi)</h3>
+              <p>Services for writing rental agreements and creating newsletters, brochures, and other printed
+                materials.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Advertising</h3>
+              <p>We provide advertising services News Paper Advertising On All Leading News Paper In Kerala - Malayala
+                Manorama, Mathrubhumi, Desabhimani, Janmabhumi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Passport Application</h3>
+              <p>We provide passport application services and arrange appointments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>LIC, Rent, University & Penalty Payments</h3>
+              <p>We provide LIC, Rent, University, penalty and all online payments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>PSC Registration</h3>
+              <p>We provide services to register PSC application and updates.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>RTO - Vehicle Tax, Insurance, Penalty</h3>
+              <p>We provide payments of vehicle tax, penalty and insurance services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Money Transfers & UPI Payments</h3>
+              <p>We provide transactions using bank transfers and BHIM UPI payments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>PAN Card</h3>
+              <p>We provide service to update your PAN Card details or Take printout of your digital PAN Card</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Farmers Facility</h3>
+              <p>We provide services for Land Lease agreement, Pm-Kissan, Pm-Fby, Supplyco Registration, Padassekharam
+                Insurance, Kissan Insurance and Royalty.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Books of Account Writing & Labour India</h3>
+              <p>We provide services for Account books writing, Preparation of financial statments, Labour India books
+                and all your online publications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Stationary</h3>
+              <p>We sell Udayabharatham calendar, school and all other stationery items.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 animate-box">
+          <div class="">
+            <div class="desc">
+              <h3>Insurance</h3>
+              <p>We provide services for Insurance Card Of Rs. 5 Lakhs for citizens above 70 years old.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-power"></i> </span>
-          <div class="desc">
-            <h3>Passport Application</h3>
-            <p>Use this website : <a href="https://portal2.passportindia.gov.in">https://portal2.passportindia.gov.in</a> to Apply Passport online. Upload Relevant documents and Verification schedulings.</p>
+      <!-- Bootstrap Ende -->
+      <div id="fh5co-services" class="fh5co-bg-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 text-center">
+              <div class="feature-center animate-box" data-animate-effect="fadeIn"> <span class="icon"> <i
+                    class="icon-eye"></i> </span>
+                <h3>Geo - Location</h3>
+                <p>Pattanchery (Shanthi Theatre Junction) Tehsil - Chittur 10.0 km. Vandithavalam 2.4 km. <br />
+                  GeoTag : 10°65'40.6"N, 76°73'33.8"5E. <br />
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 text-center">
+              <div class="feature-center animate-box" data-animate-effect="fadeIn"> <span class="icon"> <i
+                    class="icon-power"></i> </span>
+                <h3>Availability</h3>
+                <p>We are open everyday from 08.45AM - 06.00PM except Sundays! <br>We're your one-stop destination for
+                  all things internet-related services for government and official purposes. </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 text-center">
+              <div class="feature-center animate-box" data-animate-effect="fadeIn"> <span class="icon"> <i
+                    class="icon-command"></i> </span>
+                <h3>Motto</h3>
+                <p>With a commitment to customer satisfaction, we strive to provide reliable support and guidance
+                  tailored to your needs. Let's navigate the digital world together!</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-brush"></i> </span>
-          <div class="desc">
-            <h3>Digilocker</h3>
-            <p>E-sign your Govt approved documents and Use it for displaying to Officials at emergency times : <a href="https://digilocker.gov.in/">https://digilocker.gov.in/</a> (License, Aadhar Card, etc) - <a href="https://play.google.com/store/apps/details?id=com.digilocker.android">Android App Link</a></p>
+      <footer id="fh5co-footer" role="contentinfo">
+        <div class="container">
+          <div class="row row-pb-md">
+            <div class="col-md-4 fh5co-widget">
+              <h3>Our Vision</h3>
+              <p>Project Techtok is an enormous step towards making the Government more accessible to citizens. It
+                potentially empowers individual citizens by providing them with a responsive channel for accessing
+                information and services and interacting with government. Techtok has made a remarkable performance as
+                the front-end delivery network for Government services.</p>
+              <!-- <p><a href="busstandlocations.html">Bus Stand Locations</a></p> -->
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+              <ul class="fh5co-footer-links">
+                <li><a href="techtok.html">Home</a></li>
+                <li><a href="techtokaboutus.html">About Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+              <ul class="fh5co-footer-links">
+                <li><a href="techtokgallery.html">Gallery</a></li>
+                <li><a href="techtokcontactus.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+              <ul class="fh5co-footer-links">
+                <li><a href="techtokservices.html">Services</a></li>
+                <li><a href="madeby.html">MadeBy</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-align-bottom"></i> </span>
-          <div class="desc">
-            <h3>Travel Ticket Bookings</h3>
-            <p>Use this link : <a href="https://www.irctc.co.in/nget/train-search">https://www.irctc.co.in/</a> to Book Train and Travel tickets using Online Payment Methods. (Government Approved Website)</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-aircraft"></i> </span>
-          <div class="desc">
-            <h3>e-District (Akshaya Centre)</h3>
-            <p>Use this website : <a href="https://edistrict.kerala.gov.in/services.html">https://edistrict.kerala.gov.in</a> for Forms Download for every digital service available. Official Website portal.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-share-alternitive"></i> </span>
-          <div class="desc">
-            <h3>Online Shopping</h3>
-            <p>Websites for Online shopping : <a href="https://www.amazon.in/">Amazon</a>, <a href="https://www.flipkart.com/">Flipkart</a>, <a href="https://www.ebay.com/">E-Bay</a>, <a href="https://paytm.com/">PayTM</a>. Get your things delivered at your doorstep.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-tablet"></i> </span>
-          <div class="desc">
-            <h3>Find Vehicle Owner Details</h3>
-            <p>Use this website : <a href="https://parivahan.gov.in/rcdlstatus/?pur_cd=102">https://parivahan.gov.in</a> to Find Owner Name, RC and DL details using Vehicle Registration Number.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-add-to-list"></i> </span>
-          <div class="desc">
-            <h3>Kerala e-Services</h3>
-            <p>Offical Web Portal of Kerala Government : <a href="https://www.kerala.gov.in/service">https://www.kerala.gov.in/</a>. Contains Certificates, Utility Payments, Information about Kerala services.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-air"></i> </span>
-          <div class="desc">
-            <h3>Apply License Online</h3>
-            <p>Apply Learners License online, Renewal, Duplicate License, Registration and many more are dealt in this website : <a href="https://mvd.kerala.gov.in/">https://mvd.kerala.gov.in/</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-help"></i> </span>
-          <div class="desc">
-            <h3>BHIM UPI Transfers</h3>
-            <p>Use Seamless transactions using Mobile number linked with your bank account.(Google Pay, PhonePe) <a href="https://play.google.com/store/apps/details?id=in.org.npci.upiapp&hl=en_IN">BHIM App Link</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-command"></i> </span>
-          <div class="desc">
-            <h3>PAN Card Online</h3>
-            <p>Update your PAN Card details or Take printout of your digital PAN Card online using this link : <a href="https://www.onlineservices.nsdl.com/paam/MPanLogin.html">https://www.onlineservices.nsdl.com</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-video2"></i> </span>
-          <div class="desc">
-            <h3>Money Transfer Online</h3>
-            <p>Use online bank websites for money transfer. Commision tax is applied but reduces the efforts of standing in queue and Paperfree. (SBI, SIB and many more..)</p>
-            <p>&nbsp;</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="feature-center"> <span class="icon icon2"> <i class="icon-help2"></i> </span>
-          <div class="desc">
-            <h3>Online Mobile Recharge</h3>
-            <p>Search for Online Subscriber websites like <a href="https://www.jio.com/">Jio</a>, <a href="https://www.airtel.in/">Airtel</a>, <a href="https://portal.bsnl.in/myportal/quickrecharge.do">BSNL</a>, <a href="https://www.vodafone.in/">Vodafone</a> and Recharge online using different payment methods.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-	  
-	  <!-- Bootstrap Start-->
-	 <div class="container visible-xs visible-sm">
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class=""> 
-          <div class="desc">
-            <h3>Electricity Bill Online Payment</h3>
-            <p>Go to this website : <a href="https://wss.kseb.in">https://wss.kseb.in</a> and You can either keep registered or you can pay using quick payment. <a href="https://play.google.com/store/apps/details?id=com.mobile.kseb&hl=en_IN">Android App Link</a>.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Aadhar Details Update Online</h3>
-            <p>Update Aadhar Details online for free of cost using this website :&nbsp;<a href="https://uidai.gov.in/my-aadhaar/avail-aadhaar-services.html">https://uidai.gov.in</a>. Name, Address, DoB, Gender, Mobile &amp; Email can be updated online.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Passport Application</h3>
-            <p>Use this website : <a href="https://portal2.passportindia.gov.in">https://portal2.passportindia.gov.in</a> to Apply Passport online. Upload Relevant documents and Verification schedulings.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Digilocker</h3>
-            <p>E-sign your Govt approved documents and Use it for displaying to Officials at emergency times : <a href="https://digilocker.gov.in/">https://digilocker.gov.in/</a> (License, Aadhar Card, etc) - <a href="https://play.google.com/store/apps/details?id=com.digilocker.android">Android App Link</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Travel Ticket Bookings</h3>
-            <p>Use this link : <a href="https://www.irctc.co.in/nget/train-search">https://www.irctc.co.in/</a> to Book Train and Travel tickets using Online Payment Methods. (Government Approved Website)</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>e-District (Akshaya Centre)</h3>
-            <p>Use this website : <a href="https://edistrict.kerala.gov.in/services.html">https://edistrict.kerala.gov.in</a> for Forms Download for every digital service available. Official Website portal.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Online Shopping</h3>
-            <p>Websites for Online shopping : <a href="https://www.amazon.in/">Amazon</a>, <a href="https://www.flipkart.com/">Flipkart</a>, <a href="https://www.ebay.com/">E-Bay</a>, <a href="https://paytm.com/">PayTM</a>. Get your things delivered at your doorstep.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Find Vehicle Owner Details</h3>
-            <p>Use this website : <a href="https://parivahan.gov.in/rcdlstatus/?pur_cd=102">https://parivahan.gov.in</a> to Find Owner Name, RC and DL details using Vehicle Registration Number.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Kerala e-Services</h3>
-            <p>Offical Web Portal of Kerala Government : <a href="https://www.kerala.gov.in/service">https://www.kerala.gov.in/</a>. Contains Certificates, Utility Payments, Information about Kerala services.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Apply License Online</h3>
-            <p>Apply Learners License online, Renewal, Duplicate License, Registration and many more are dealt in this website : <a href="https://mvd.kerala.gov.in/">https://mvd.kerala.gov.in/</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>BHIM UPI Transfers</h3>
-            <p>Use Seamless transactions using Mobile number linked with your bank account.(Google Pay, PhonePe) <a href="https://play.google.com/store/apps/details?id=in.org.npci.upiapp&hl=en_IN">BHIM App Link</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>PAN Card Online</h3>
-            <p>Update your PAN Card details or Take printout of your digital PAN Card online using this link : <a href="https://www.onlineservices.nsdl.com/paam/MPanLogin.html">https://www.onlineservices.nsdl.com</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Money Transfer Online</h3>
-            <p>Use online bank websites for money transfer. Commision tax is applied but reduces the efforts of standing in queue and Paperfree. (SBI, SIB and many more..)</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6 animate-box">
-        <div class="">
-          <div class="desc">
-            <h3>Online Mobile Recharge</h3>
-            <p>Search for Online Subscriber websites like <a href="https://www.jio.com/">Jio</a>, <a href="https://www.airtel.in/">Airtel</a>, <a href="https://portal.bsnl.in/myportal/quickrecharge.do">BSNL</a>, <a href="https://www.vodafone.in/">Vodafone</a> and Recharge online using different payment methods.</p>
-          </div>
-        </div>
-      </div>
-	  </div>
-	  <!-- Bootstrap Ende -->
-     <div id="fh5co-services" class="fh5co-bg-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-4 text-center">
-          <div class="feature-center animate-box" data-animate-effect="fadeIn"> <span class="icon"> <i class="icon-eye"></i> </span>
-            <h3>Geo - Location</h3>
-            <p>Pattanchery (Shanthi Theatre Junction) Tehsil - Chittur 10.0 km. Vandithavalam 2.4 km. <br/>
-              GeoTag : 10°65'40.6"N, 76°73'33.8"5E. <br/>
-              </p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 text-center">
-          <div class="feature-center animate-box" data-animate-effect="fadeIn"> <span class="icon"> <i class="icon-power"></i> </span>
-            <h3>Availability</h3>
-            <p>We are open everyday from 08.45AM - 06.00PM except Sundays! <br>We're your one-stop destination for all things internet-related services for government and official purposes. </p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 text-center">
-          <div class="feature-center animate-box" data-animate-effect="fadeIn"> <span class="icon"> <i class="icon-command"></i> </span>
-            <h3>Motto</h3>
-            <p>With a commitment to customer satisfaction, we strive to provide reliable support and guidance tailored to your needs. Let's navigate the digital world together!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer id="fh5co-footer" role="contentinfo">
-    <div class="container">
-      <div class="row row-pb-md">
-        <div class="col-md-4 fh5co-widget">
-          <h3>Our Vision</h3>
-          <p>Project Techtok is an enormous step towards making the Government more accessible to citizens. It potentially empowers individual citizens by providing them with a responsive channel for accessing information and services and interacting with government. Techtok has made a remarkable performance as the front-end delivery network for Government services.</p>
-          <!-- <p><a href="busstandlocations.html">Bus Stand Locations</a></p> -->
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-          <ul class="fh5co-footer-links">
-            <li><a href="techtok.html">Home</a></li>
-            <li><a href="techtokaboutus.html">About Us</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-          <ul class="fh5co-footer-links">
-            <li><a href="techtokgallery.html">Gallery</a></li>
-            <li><a href="techtokcontactus.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-          <ul class="fh5co-footer-links">
-            <li><a href="techtokservices.html">Services</a></li>
-            <li><a href="madeby.html">MadeBy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row copyright">
-        <div class="col-md-12 text-center">
-          <p> <small class="block">&copy; 2024 All Rights Reserved.</small> <small class="block">Designed by Transposter.  </small> </p>
-          <p>
-          <ul class="fh5co-social-icons">
-            <!-- <li><a href="https://twitter.com/CandySkulzZ"><em class="icon-twitter"></em></a></li>
+          <div class="row copyright">
+            <div class="col-md-12 text-center">
+              <p> <small class="block">&copy; 2024 All Rights Reserved.</small> <small class="block">Designed by
+                  Transposter. </small> </p>
+              <p>
+              <ul class="fh5co-social-icons">
+                <!-- <li><a href="https://twitter.com/CandySkulzZ"><em class="icon-twitter"></em></a></li>
             <li><a href="https://www.facebook.com/CandySkulzZ"><i class="icon-facebook"></i></a></li> 
             <li><a href="https://www.linkedin.com/in/kannathb/"><i class="icon-linkedin"></i></a></li>-->
-            <li><a href="https://www.instagram.com/_transposter_/"><i class="icon-instagram"></i></a></li>
-          </ul>
-          </p>
+                <li><a href="https://www.instagram.com/_transposter_/"><i class="icon-instagram"></i></a></li>
+              </ul>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
-  </footer>
-</div>
-<div class="gototop js-top"> <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a> </div>
+    <div class="gototop js-top"> <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a> </div>
 
-<!-- jQuery --> 
-<script src="js/jquery.min.js"></script> 
-<!-- jQuery Easing --> 
-<script src="js/jquery.easing.1.3.js"></script> 
-<!-- Bootstrap --> 
-<script src="js/bootstrap.min.js"></script> 
-<!-- Waypoints --> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<!-- Main --> 
-<script src="js/main.js"></script> 
-<script>
-function myFunctionsbk() {
-  var x = document.getElementById("myDiv");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+    <script>
+      function myFunctionsbk() {
+        var x = document.getElementById("myDiv");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
 </body>
+
 </html>
